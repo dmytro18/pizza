@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino's Pizza</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Domino's Pizza</h1>
+    <img src="img/pizza.jpg" alt="pizza">
+
+    <form action="">
+      <h2 class="heading"> Order Pizza </h2>
+
+      <input class="input" type="text" placeholder="Your name" required>
+      <input class="input" type="text" placeholder="Your Surname" required>
+
+
+      <input class="input"  type="email" placeholder="Your email"  required>
+      <input class="input"list="pizzas" placeholder="pizzas name" required>
+      <datalist id="pizzas">
+          <option value="Margarita">
+          <option value="Four Cheeses">
+          <option value="Bayrnian">
+          <option value="Margarita 2">
+      </datalist>
+
+
+      <input class="input" type="number" placeholder="Pizzas count" min="0" max="99"required>
+      <input id="submit-btn" type="submit" name="" value="Make Order">
+
+      <a href="about.html">About Us</a>
+
+
+    </form>
+  </body>
+</html>
