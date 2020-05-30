@@ -7,32 +7,46 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Domino's Pizza</h1>
+    <h1 class="heading">Domino's Pizza</h1>
     <img src="img/pizza.jpg" alt="pizza">
 
-    <form action="">
+    <form id="main-form">
       <h2 class="heading"> Order Pizza </h2>
 
-      <input class="input" type="text" placeholder="Your name" required>
-      <input class="input" type="text" placeholder="Your Surname" required>
-
-
+      <input class="input" name="firstName" type="text" placeholder="Your name" required>
+      <input class="input" name="lastName" type="text" placeholder="Last name" required>
       <input class="input"  type="email" placeholder="Your email"  required>
-      <input class="input"list="pizzas" placeholder="pizzas name" required>
+      <input class="input" name="pizzaName" list="pizzas" placeholder="pizzas name" required>
       <datalist id="pizzas">
           <option value="Margarita">
           <option value="Four Cheeses">
           <option value="Bayrnian">
           <option value="Margarita 2">
+          <option value="B&Q">
+          <option value="Verona">
       </datalist>
 
 
-      <input class="input" type="number" placeholder="Pizzas count" min="0" max="99"required>
-      <input id="submit-btn" type="submit" name="" value="Make Order">
+      <input class="input" name="quantity" type="number" placeholder="Pizzas count" min="0" max="99"required>
+      <input class="submit-btn" type="submit" name="" value="Make Order">
 
       <a href="about.html">About Us</a>
 
 
     </form>
+      <div class="bg-mute" id="bg">
+        <div class="order-info">
+          <h1>Your Order Info </h1>
+          <h3 id="firstName">First name</h3>
+          <h3 id="lastName">Last name</h3>
+          <h3 id="selectedPizza">Selected Pizza</h3>
+          <h3 id="price">Price</h3>
+          <h3 id="pizzaCount">Pizza Count</h3>
+          <form>
+              <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
